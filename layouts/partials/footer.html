@@ -5,3 +5,4 @@
 {{ $scriptPath := "js/index.js" }}
 {{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $scripts.Permalink }}"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="5d562f33-71f1-44da-b35e-570497317388"></script>
